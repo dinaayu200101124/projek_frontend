@@ -16,7 +16,7 @@ const UserList = () => {
  
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`https://projek-backend.herokuapp.com`);
+      await axios.delete(`https://projek-backend.herokuapp.com/`);
       getUsers();
     } catch (error) {
       console.log(error);
