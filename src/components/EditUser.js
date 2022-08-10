@@ -14,7 +14,7 @@ const EditUser = () => {
   }, []);
  
   const getUserById = async () => {
-    const response = await axios.get(`http://localhost:5000/users/`);
+    const response = await axios.get("http://localhost:5000/users/${id}");
     setName(response.data.name);
     setEmail(response.data.email);
     setGender(response.data.gender);

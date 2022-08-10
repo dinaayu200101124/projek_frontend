@@ -10,7 +10,7 @@ const UserList = () => {
   }, []);
  
   const getUsers = async () => {
-    const response = await axios.get("http://localhost:5000/users");
+    const response = await axios.get("http://localhost:5000/users/${id}");
     setUser(response.data);
   };
  
