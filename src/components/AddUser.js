@@ -11,7 +11,7 @@ const AddUser = () => {
   const saveUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.post("https://projek-backend.herokuapp.com/", {
+      await axios.post('https://projek-backend.herokuapp.com/', {
         name,
         email,
         gender,
