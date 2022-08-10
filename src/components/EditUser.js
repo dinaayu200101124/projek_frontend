@@ -23,7 +23,7 @@ const EditUser = () => {
   const updateUser = async (e) => {
     e.preventDefault();
     try {
-      await axios.patch(`https://projek-backend.herokuapp.com/users`, {
+      await axios.patch("https://projek-backend.herokuapp.com/users", {
         name,
         email,
         gender,
