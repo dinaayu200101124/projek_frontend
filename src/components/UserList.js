@@ -10,13 +10,13 @@ const UserList = () => {
   }, []);
  
   const getUsers = async () => {
-    const response = await axios.get("http://localhost:5000/users/${id}");
+    const response = await axios.get("https://projek-backend.herokuapp.com/users");
     setUser(response.data);
   };
  
   const deleteUser = async (id) => {
     try {
-      await axios.delete(`https://projek-backend.herokuapp.com/`);
+      await axios.delete(`https://projek-backend.herokuapp.com/users`);
       getUsers();
     } catch (error) {
       console.log(error);
